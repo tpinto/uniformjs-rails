@@ -13,6 +13,8 @@ Gem::Specification.new do |spec|
   spec.summary              = %q{Uniform.js integration with Rails}
   spec.description          = %q{An easy way to include Uniform.js into your app.}
   spec.license              = "MIT"
-  spec.files                = Dir["lib/**/*"] + Dir["vendor/**/*"] + ["README.md", "MIT-LICENSE"]
+  spec.files                = Dir["{lib,vendor}/**/*"] + ["README.md", "MIT-LICENSE"]
   spec.require_paths        = ["lib"]
+  spec.add_dependency           'rails'
+  spec.add_dependency       'sass-rails'
 end
