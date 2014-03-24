@@ -1,29 +1,40 @@
-# Uniformjs::Rails
+# uniformjs-rails
 
-TODO: Write a gem description
+Uniform.js for Rails Asset Pipeline.
+This branch (tpinto/uniformjs-rails) is based on m1k3's initial versions.
+
+## Changelog
+
+* 2014-03-24: Initial revision
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Just add this line to your Gemfile:
 
-    gem 'uniformjs-rails'
+    gem 'uniformjs-rails', github: "tpinto/uniformjs-rails"
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install uniformjs-rails
-
 ## Usage
 
-TODO: Write usage instructions here
+Add this line to your `application.js`:
+    
+    //= require jquery.uniform.min
+
+Add one of these lines to your `application.css`, depending on the theme you fancy the most:
+
+    *= require uniform.default
+    *= require uniform.agent
+    *= require uniform.aristo
+    *= require uniform.jeans
+
+More about Uniform.js: http://uniformjs.com/
 
 ## Contributing
 
 1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Added some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+2. Change what you want
+3. Release it under your name
+4. Let the community know about your changes

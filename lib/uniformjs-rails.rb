@@ -1,4 +1,4 @@
-require "uniformjs-rails/version"
+require 'uniformjs/rails/version'
 
 module Uniformjs
   module Rails
